@@ -1,47 +1,6 @@
-# Frontend Mentor - PayAPI multi-page website solution
+## Links
 
-This is a solution to the [PayAPI multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/payapi-multipage-website-FDLR1Y11e). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements throughout the site
-- Receive an error message when the contact form is submitted if:
-  - The `Name`, has less than 3 or more than 30 characters "First name must be between 3 and 30"
-  - The  `Message` field is empty , has less than 5 or more than 50 characters
-       should show "First name must be between 3 and 50"
-  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
-  - The `Title` has less than 2 characters, "Title  must be between 2 and 8"
-  - The `Company` has less than 3 characters , "Company name must not be empty"
-
-### Screenshot (Design preview)
-
-![mobile preview - home page](./src/assets/mobile.png)
-![desktop preview - about page](./src/assets/desktop.png)
-
-### Links
-
-- Live URL: [Payapi](https://payapi-multipage-website.netlify.app/)
-
-## My process
+- See The Live URL: [Payapi](https://unruffled-colden-5c0403.netlify.app/)
 
 ### Built with
 
@@ -76,12 +35,8 @@ Users should be able to:
 
 - [React router dom](https://reactrouter.com/web/guides/quick-start) - navigation between pages
 
-## Author
 
-- Website - [Chamu Mutezva](https://github.com/ChamuMutezva)
-- Frontend Mentor - [@ChamuMutezva](https://www.frontendmentor.io/profile/ChamuMutezva)
-- Twitter - [@ChamuMutezva](https://twitter.com/ChamuMutezva)
+### Screenshot (Design preview)
 
-## Acknowledgments
-- Many thanks to [Steven Toben] at the Frontend Mentor Slack channel for a well informed review and providing  advice and ways on how to fix some of the React issues.
-- Frontend Mentor community leaders for providing a platform to engage with fellow learners and mentors. This makes the learning exciting.
+![mobile preview - home page](./src/assets/mobile.png)
+![desktop preview - about page](./src/assets/desktop.png)
