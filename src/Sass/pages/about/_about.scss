@@ -1,0 +1,154 @@
+@use '../../base';
+
+.main__about {
+    margin-top: -(base.calculateRem(10));
+    text-align: center;
+   
+    .mission__title {
+        color: base.$tx-dark-grey;
+        font-family: base.$heading-font;
+        line-height: 32px;
+        font-size: base.calculateRem(24);
+        letter-spacing: -0.18px;
+    }
+
+    .mission__summary {
+        padding: 0 base.calculateRem(24);
+    }
+
+    .mission {
+        margin-bottom: base.calculateRem(42);
+    }
+
+    .hero__about__img {
+        margin: base.calculateRem(76) auto base.calculateRem(50);
+    }
+
+    .primary__about {
+        padding: 0 base.calculateRem(24);
+
+    }
+
+    .about__list {
+        border-top: 1px solid base.$tx-grey-mid;
+        border-bottom: 1px solid base.$tx-grey-mid;
+        padding-top: base.calculateRem(10);
+    }
+
+    .about__list__summary {
+        font-size: base.calculateRem(16);
+        line-height: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: base.$tx-grey-mid;
+    }
+
+    .about__list__item {
+        margin-bottom: base.calculateRem(28);
+    }
+
+    .about__list__data {
+        font-size: base.calculateRem(56);
+        line-height: 72px;
+        letter-spacing: -0.43px;
+        color: base.$tx-pink;
+        font-family: base.$heading-font;
+
+    }
+
+    @include base.mQ(720px) {
+        margin-top: base.calculateRem(10);
+
+        .missions {
+            margin-bottom: base.calculateRem(96);
+            margin-top: base.calculateRem(15);
+        }
+
+        .mission {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            padding: 0 base.calculateRem(39);
+        }
+
+        .mission__title {
+            flex: 1 1 33%;
+            text-align: left;
+        }
+
+        .mission__summary {
+            padding: 0;
+            flex: 1 1 67%;
+            text-align: left;
+        }
+
+        .about__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+        }
+
+        .about__list__item {
+            padding-top: base.calculateRem(16);
+            padding-bottom: base.calculateRem(16);
+            border-top: 1px solid base.$tx-grey-mid;
+            border-bottom: 1px solid base.$tx-grey-mid;
+            width: 32%;
+        }
+
+        .about__list__summary {
+            align-items: baseline;
+        }
+
+        .primary__about {
+            padding: 0 base.calculateRem(39);
+
+        }
+    }
+
+    @include base.mQ(1280px) {
+
+        margin-top: 10px;
+        .about__list {
+            padding: 1rem base.calculateRem(165);
+        }
+
+        .mission {          
+            padding: 0;
+        }
+
+        .missions {
+            padding: 0 base.calculateRem(260);
+            margin-bottom: base.calculateRem(150);
+        }
+        .about__img {
+            position: relative;
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 170px;
+                height: 170px;
+                background-image: url('../../../assets/shared/desktop/bg-pattern-circle.svg');
+                background-repeat: no-repeat;
+                background-size: 290%;   
+                left: 0px;             
+            }
+            &::before {                
+                top: -(base.calculateRem(170));               
+                transform: rotate(90deg);
+            }
+            &::after {               
+                bottom: -(base.calculateRem(170));               
+                transform: rotate(180deg);
+            }
+        }
+
+        .hero__image__container {
+            max-width: 541px;
+        }
+    }
+}
